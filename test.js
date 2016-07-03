@@ -34,8 +34,8 @@ tape('arrayZipper', function (test) {
 
     test.comment(' zip [] and [\'a\', \'c\'] and [\'b\', \'d\', \'e\', \'f\']');
     test.equal(resultArray2[0], 'a', 'resultArray[0] is equal a');
-    test.equal(resultArray2[2], 'c', 'resultArray[0] is equal c');
-    test.equal(resultArray2[5], 'f', 'resultArray[0] is equal f');
+    test.equal(resultArray2[2], 'c', 'resultArray[2] is equal c');
+    test.equal(resultArray2[5], 'f', 'resultArray[5] is equal f');
 
     test.end();
     
