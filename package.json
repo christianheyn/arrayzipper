@@ -2,7 +2,7 @@
   "name": "arrayzipper",
   "version": "0.0.1",
   "description": "zip two or more arrays to one",
-  "main": "dist/app.js",
+  "main": "dist/js/app.js",
   "scripts": {
     "test": "npm run lint:js && npm run lint:js:test && node test/dist/js/test.js",
     "postinstall": "npm run browserify && npm run browserify:test && npm test",
