@@ -20,8 +20,6 @@ $ npm test
 ___
 
 
-#### have fun
-
 _This repo is `commitizen` friendly. Find more information about that [here](http://commitizen.github.io/cz-cli/)._
 
 **Author**
