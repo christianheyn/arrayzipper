@@ -5,7 +5,7 @@
   "main": "dist/js/app.js",
   "scripts": {
     "test": "npm run lint:js && npm run lint:js:test && node test/dist/js/test.js",
-    "postinstall": "npm run browserify && npm run browserify:test && npm test",
+    "prepublish": "npm run browserify && npm run browserify:test && npm test",
     "browserify": "browserify js/app.js -o dist/js/app.js -t [ babelify --presets [ es2015 ] ]",
     "browserify:test": "browserify test/js/test.js -o test/dist/js/test.js -t [ babelify --presets [ es2015 ] ]",
     "watch:js": "watch-run -p 'js/*.js' npm run browserify",
