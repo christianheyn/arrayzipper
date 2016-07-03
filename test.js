@@ -1,5 +1,5 @@
-import tape from 'tape';
-import arrayZipper from './../../js/app.js'
+var tape = require('tape'),
+    arrayZipper = require('./index.js');
 
 tape('arrayZipper', function (test) {
     test.equal(typeof arrayZipper, 'function', 'is a function');
@@ -8,7 +8,7 @@ tape('arrayZipper', function (test) {
     test.deepEqual(arrayZipper([]), [],
         'returns an empty array if an empty array is given as parameter');
 
-    let testArray = [
+    var testArray = [
             [0, 3, 6, 8],
             [1, 4, 7],
             [2, 5]
@@ -36,5 +36,7 @@ tape('arrayZipper', function (test) {
     test.equal(resultArray2[0], 'a', 'resultArray[0] is equal a');
     test.equal(resultArray2[2], 'c', 'resultArray[0] is equal c');
     test.equal(resultArray2[5], 'f', 'resultArray[0] is equal f');
+
+    test.end();
     
 });

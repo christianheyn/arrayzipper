@@ -11,7 +11,7 @@
     }
 }(function () {
     return (arrayOfArrays) => {
-        let resultArray,
+        var resultArray,
             length;
 
         if (typeof arrayOfArrays == 'undefined'
@@ -28,9 +28,10 @@
          * @param  {number} counter
          */
         function order (counter) {
-            let emptyNumber = 0;
+            var emptyNumber = 0,
+                i = 0;
 
-            for (let i = 0; i < length; i += 1) {
+            for (i; i < length; i += 1) {
                 if (typeof arrayOfArrays[i][counter] != 'undefined') {
                     resultArray.push(arrayOfArrays[i][counter]);
                 } else {
