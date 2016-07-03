@@ -1,6 +1,6 @@
 {
   "name": "arrayzipper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "zip two or more arrays to one",
   "main": "dist/js/app.js",
   "scripts": {
